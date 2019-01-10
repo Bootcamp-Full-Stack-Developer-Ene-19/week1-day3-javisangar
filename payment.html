@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+</head>
+<body>
+        <div class="menu">
+                <ul>
+                    <li><a href=index.html>01 CUSTOMER INFO</a></li>
+                    <li><a href=shipping.html>02 SHOPPING INFO</a></li>
+                    <li><a href=payment.html>03 PAYMENT SECTION</a></li>
+                </ul>
+            </div>
+            <div>
+                <form>
+                    <h1>Payment Selection</h1>
+                    <div>
+                            <input type="radio" id="credit">
+                            <label for="credit">Credit Card</label>
+                            <img src="./images/checkout/cards.png" alt="credit cards" width="106" height="22">
+                            <p>Safe money transfer using your bank account. Visa, Maestro, Discover, American Express.</p>
+                    </div>
+                    <div>
+                            <label for="cardnumber">Card Number</label>
+                            <input type="cardnumber" id="Number">
+                        </div>
+                        <div>
+                            <label for="namecard">Name on Card</label>
+                            <input type="text" >
+                            <label for="expired">Expiry Date</label>
+                            <input type="date">
+                            <label for="cvvcode">CVV CODE</label>
+                            <input type="number">
+                        </div>
+                        <div>
+                            <input type="radio" id="paypal">
+                            <label for="paypal">Paypal</label>
+                            <img src="./images/checkout/paypal.png" alt="">
+                            <p>You will be redirected to PayPal website to complete your purchase securely.</p>
+                            
+                        </div>
+                        <a href="#">⬅️Back to shipping info</a>
+                        <button type="submit">Complete Order</button>
+                        
+
+                </form>
+            </div>
+
+            <div class="shopcart">
+                    <form>
+                        <fieldset>
+                        <h1>Sopping Cart</h1>
+                
+                        <div>
+                           <col><img src="./images/checkout/producto-2.jpg" alt="college bag">
+                        <col>Lightweight College Backpack 99,90€
+            
+                        </div>
+                        <div>
+                           <col><img src="./images/checkout/producto-1.jpg" alt=" casual watch">
+                            <col>Business Casual Leather Watch Waterproof 69,90€
+                        </div>
+                        <div>
+                            Have Voucher?
+                        </div>
+                        <div>
+                            Subtotal
+                            €169.80
+                        </div>
+                        <div>
+                            Subtotal
+                            Free
+                        </div>
+                        <div>
+                           Total
+                           €169.80
+                        </div>
+            
+                    </form>
+                </div>
+</body>
+</html>
