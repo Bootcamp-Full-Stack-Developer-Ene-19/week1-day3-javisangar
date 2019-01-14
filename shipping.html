@@ -1,83 +1,93 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
 </head>
+
 <body>
-        <div class="menu">
-                <ul>
-                        <li><a href=index.html>01 CUSTOMER INFO</a></li>
-                        <li><a href=shipping.html>02 SHOPPING INFO</a></li>
-                        <li><a href=payment.html>03 PAYMENT SECTION</a></li>
-                    </ul>
+    <div class="menu">
+        <ul>
+            <li><a href=index.html>01 CUSTOMER INFO</a></li>
+            <li><a href=shipping.html>02 SHOPPING INFO</a></li>
+            <li><a href=payment.html>03 PAYMENT SECTION</a></li>
+        </ul>
+    </div>
+    <article>
+        <h1>Shipping Information</h1>
+        <address>
+            <p> Jamy Larson <br>
+                Unit 2 Green Mount Retail Park <br>
+                Halifax<br>
+                HX1 5QN<br>
+                Tel:0344 332 5931<br> </p>
+        </address>
+
+    </article>
+    <div>
+        <a href="#">Edit Address</a>
+        <a href="#">Add New</a>
+    </div>
+    <img src="./images/checkout/map.png" alt="">
+    <div>
+        <h1>Shipping Method</h1>
+    </div>
+    <div>
+        <form>
+            <input type="radio" aria-describedby="standart" name="delivery" id="standart">
+
+            <label for="standart">Standart Delivery Free</label>
+            <p id="desc">Estimated 14-20 Day Shipping (Duties and taxes may be due upon delivery)</p>
+
+            <input type="radio" aria-describedby="fast" name="delivery" id="fast">
+            <label for="fast">Fast Delivery €8.00</label>
+            <p>Estimated 2-5 Days Shipping (Duties and taxes may be due upon delivery)</p>
+            <div><span><a href="#">⬅️back to customer info</a>
+                    <button type="submit">Continue To Payment</button></span>
             </div>
-            <div>
-                <h1>Shipping Information</h1>
-                <p>Jamy Larson</p>
-                <p>Unit 2 Green Mount Retail Park</p>
-                <p>Halifax</p>
-                <p>HX1 5QN</p>
-                <p>Tel:0344 332 5931</p>
-                
-            </div>
-            <div>
-                <a href="#">Edit Address</a>
-                <a href="#">Add New</a>
-            </div>
-            <img src="./images/checkout/map.png" alt="">
-            <div>
-                <h1>Shipping Method</h1>
-            </div>
-            <div>
-                <form>
-                        <input type="radio" id="standart">
-                        <label for="standart">Standart Delivery Free</label>
-                        <p>Estimated 14-20 Day Shipping (Duties and taxes may be due upon delivery)</p>
-                        <input type="radio" id="fast">
-                        <label for="fast">Fast Delivery €8.00</label>
-                        <p>Estimated 2-5 Days Shipping (Duties and taxes may be due upon delivery)</p>
-                        <div><button type="submit">Continue To Payment</button>
-                        </div>
-            
-                </form>
-            </div>
-            <div class="shopcart">
-                    <form>
-                        <fieldset>
-                        <h1>Sopping Cart</h1>
-                
-                        <div>
-                           <col><img src="./images/checkout/producto-2.jpg" alt="college bag">
-                        <col>Lightweight College Backpack 99,90€
-            
-                        </div>
-                        <div>
-                           <col><img src="./images/checkout/producto-1.jpg" alt=" casual watch">
-                            <col>Business Casual Leather Watch Waterproof 69,90€
-                        </div>
-                        <div>
-                            Have Voucher?
-                        </div>
-                        <div>
-                            Subtotal
-                            €169.80
-                        </div>
-                        <div>
-                            Subtotal
-                            Free
-                        </div>
-                        <div>
-                           Total
-                           €169.80
-                        </div>
-            
-                    </form>
-                </div>
-                <a href="#">⬅️Return to shop</a>
-    
+
+        </form>
+    </div>
+    <div class="shopcart">
+
+        <table>
+            <tr>
+                <td>shopping cart</td>
+                <td><span>2️⃣</span></td>
+            </tr>
+            <tr>
+                <td><img src="./images/checkout/producto-2.jpg" alt=""></td>
+                <td>Typeface
+                    Lightweight College Backpack
+                    ”</td>
+            </tr>
+            <tr>
+                <td><img src="./images/checkout/producto-1.jpg" alt=""></td>
+                <td>Typeface
+                    Business Casual Leather Watch Waterproof
+                    ”</td>
+            </tr>
+            <tr>have a voucher?</tr>
+            <tr>
+                <td>subtotal</td>
+                <td>169,80€</td>
+            </tr>
+            <tr>
+                <td>shipping</td>
+                <td>free</td>
+            </tr>
+            <tr>
+                <td>total</td>
+                <td>€169,80</td>
+            </tr>
+        </table>
+    </div>
+
+
 </body>
+
 </html>
