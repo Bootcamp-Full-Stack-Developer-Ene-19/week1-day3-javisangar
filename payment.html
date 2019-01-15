@@ -10,81 +10,99 @@
 </head>
 
 <body>
-    <div class="menu">
+
+    <main>
+        <ol aria-label="breadcrum">
+            <li aria-current="true"> customer info</li>
+            <li aria-current="false"> shopping info</li>
+            <li aria-current="false"> payment selection</li>
+        </ol>
+
+
+        <div>
+            <form>
+                <h1>Payment Selection</h1>
+                <div>
+                    <input type="radio" name="pay" id="credit">
+                    <label for="credit">Credit Card</label>
+                    <img src="./images/checkout/cards.png" alt="credit cards" width="106" height="22">
+                    <p>Safe money transfer using your bank account. Visa, Maestro, Discover, American Express.</p>
+                </div>
+                <div>
+                    <label for="cardNumber">Card Number</label>
+                    <input type="cardNumber" id="cardNumber">
+                </div>
+                <div>
+                    <label for="namecard">Name on Card</label>
+                    <input type="text">
+                    <label for="expired">Expiry Date</label>
+                    <input type="date">
+                    <label for="cvvcode">CVV CODE</label>
+                    <input type="number">
+                </div>
+                <div>
+                    <input type="radio" name="pay" id="paypal">
+                    <label for="paypal">Paypal</label>
+                    <img src="./images/checkout/paypal.png" alt="">
+                    <p>You will be redirected to PayPal website to complete your purchase securely.</p>
+
+                </div>
+                <a href="#">⬅️Back to shipping info</a>
+                <button type="submit">Complete Order</button>
+
+
+            </form>
+        </div>
+    </main>
+
+    <aside>
+        <h1>shopping cart<span aria-label="Número de productos">2</span></h1>
         <ul>
-            <li><a href=index.html>01 CUSTOMER INFO</a></li>
-            <li><a href=shipping.html>02 SHOPPING INFO</a></li>
-            <li><a href=payment.html>03 PAYMENT SECTION</a></li>
-        </ul>
-    </div>
-    <div>
-        <form>
-            <h1>Payment Selection</h1>
-            <div>
-                <input type="radio" name="pay" id="credit">
-                <label for="credit">Credit Card</label>
-                <img src="./images/checkout/cards.png" alt="credit cards" width="106" height="22">
-                <p>Safe money transfer using your bank account. Visa, Maestro, Discover, American Express.</p>
-            </div>
-            <div>
-                <label for="cardNumber">Card Number</label>
-                <input type="cardNumber" id="cardNumber">
-            </div>
-            <div>
-                <label for="namecard">Name on Card</label>
-                <input type="text">
-                <label for="expired">Expiry Date</label>
-                <input type="date">
-                <label for="cvvcode">CVV CODE</label>
-                <input type="number">
-            </div>
-            <div>
-                <input type="radio" name="pay" id="paypal">
-                <label for="paypal">Paypal</label>
-                <img src="./images/checkout/paypal.png" alt="">
-                <p>You will be redirected to PayPal website to complete your purchase securely.</p>
-
-            </div>
-            <a href="#">⬅️Back to shipping info</a>
-            <button type="submit">Complete Order</button>
-
-
-        </form>
-    </div>
-
-    <div class="shopcart">
-        <table>
-            <tr>
-                <td>shopping cart</td>
-                <td><span>2️⃣</span></td>
-            </tr>
-            <tr>
-                <td><img src="./images/checkout/producto-2.jpg" alt=""></td>
-                <td>Typeface
+            <li>
+                <a href="#">
+                    <img src="./images/checkout/producto-2.jpg" alt=""> Typeface
                     Lightweight College Backpack
-                    ”</td>
+
+                    <span aria-label="precio">€99,90</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./images/checkout/producto-1.jpg" alt="">Business Casual Leather Watch Waterproof
+                    <span aria-label="precio">€69,90</span>
+                </a>
+            </li>
+        </ul>
+        <div>
+            <button type="button">have a vaucher?</button>
+            <form action="#">
+                <label for="insertCode"></label>
+                <input type="text" id="code">
+                <button type="submit">submit</button>
+            </form>
+        </div>
+        <table>
+            <caption class="sr-only">Total</caption>
+            <tr>
+                <th scope="row">subtotal
+
+                </th>
+                <td>169</td>
             </tr>
             <tr>
-                <td><img src="./images/checkout/producto-1.jpg" alt=""></td>
-                <td>Typeface
-                    Business Casual Leather Watch Waterproof
-                    ”</td>
-            </tr>
-            <tr> a voucher?</tr>
-            <tr>
-                <td>subtotal</td>
-                <td>169,80€</td>
+                <th>shipping</th>
+                <td>99</td>
             </tr>
             <tr>
-                <td>shipping</td>
-                <td>free</td>
+                <th scope="row">total</th>
+                <td>169,90</td>
             </tr>
-            <tr>
-                <td>total</td>
-                <td>€169,80</td>
-            </tr>
+
+
+
         </table>
-    </div>
+
+    </aside>
 </body>
 
 </html>
