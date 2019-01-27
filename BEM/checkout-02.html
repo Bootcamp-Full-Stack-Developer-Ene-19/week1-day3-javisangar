@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <main>
+
+      <ol aria-label="Rastro de migas" class="breadcrum">
+        <li>Customer info</li>
+        <li aria-current="true">Shipping info</li>
+        <li>Payment selection</li>
+      </ol>
+
+
+      <article class="ship-info">
+        <h1 class="ship-info__title">Shipping Information</h1>
+        <div class="container">
+          <div class="col">
+            <article>
+              <address class="ship-info__address">
+                Jamy Larson<br>
+                Unit 2 Green Mount Retail Park<br>
+                Halifax<br>
+                HX1 5QN<br>
+                Tel: 0344 332 5931<br>
+              </address>
+              <a href="#" class="link ship-info__link">Edit Address</a>
+              <span aria-hidden="true"></span>
+              <span class="link-space">•</span>
+              <a href="#" class="link ship-info__link">Add New</a>
+            </article>
+          </div>
+          <div class="col">
+            <iframe src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=Unit%202%20Green%20Mount%20Retail%20Park%20Halifax%20HX1%205QN+(Javier%20Sanchez)&amp;ie=UTF8&amp;t=&amp;z=18&amp;iwloc=B&amp;output=embed"
+              width="100%" height="228" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </article>
+
+      <form action="" class="checkout">
+        <h1 class="checkout__title">Shipping Method</h1>
+        <div class="checkout__divider">
+          <div class="checkout__wrapper">
+            <input type="radio" name="shipping" id="standard" class="checkout__radiocheck">
+            <label for="standard" aria-describedby="descStandard" class="checkout__label checkout__label--radio">Standard
+              Delivery <span>Free</span></label>
+            <p id="descStandard" class="checkout__label__desc">Estimated 14-20 Day Shipping (Duties and taxes may be
+              due upon delivery)</p>
+          </div>
+          <div class="checkout__wrapper">
+            <input type="radio" name="shipping" id="fast" class="checkout__radiocheck">
+            <label for="fast" aria-describedby="descFast" class="checkout__label checkout__label--radio">Fast Delivery
+              <span>€ 8.00</span></label>
+            <p id="descFast" class="checkout__label__desc">Estimated 2-5 Days Shipping (Duties and taxes may be due
+              upon delivery)</p>
+          </div>
+        </div>
+        <div class="checkout__submit">
+          <a href="checkout-01.html" class="link checkout__link"> Back to Customer Info</a>
+          <button type="submit" class="btn checkout__btn--submit">Continue to payment</button>
+        </div>
+      </form>
+
+    </main>
+
+    <aside class="summary">
+      <h1 class="title summary__title">Shopping Cart <span aria-label="Número de productos" class="summary__badge">2</span></h1>
+      <ul class="summary__product">
+        <li>
+          <a href="#" class="summary__link">
+            <img src="img/producto-2.jpg" alt="" class="summary__img">
+            Lightweight College Backpack
+            <span aria-label="precio" class="summary__price">€ 99.90</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/producto-1.jpg" alt="" class="summary__img">
+            Business Casual Leather Watch Waterproof
+            <span aria-label="precio" class="summary__price">€ 69.90</span>
+          </a>
+        </li>
+      </ul>
+      <div>
+        <button type="button" class="btn summary__btn" aria-haspopup="true" aria-labelledby="toggleVoucher" onclick="myFunction()">Have
+          a Voucher? <span>V</span></button>
+        <form action="" class="voucher summary__voucher" id="toogleVoucher">
+          <label for="code" class="label voucher__label">Insert vaucher code</label>
+          <input type="text" id="code" class="input voucher__input">
+          <button type="submit" class="btn voucher__btn--submit">Submit</button>
+        </form>
+      </div>
+      <table class="total">
+        <caption class="sr-only">Totales del carrito</caption>
+        <tr>
+          <th scope="row">Subtotal</th>
+          <td>€ 169.80</td>
+        </tr>
+        <tr>
+          <th scope="row">Shipping</th>
+          <td>free</td>
+        </tr>
+        <tr class="total__result">
+          <th scope="row">Total</th>
+          <td>€ 169.80</td>
+        </tr>
+      </table>
+    </aside>
+  </div>
+  <script src="../BEM/js/main.js"></script>
+</body>
+
+</html>
